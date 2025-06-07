@@ -1,10 +1,22 @@
 import './App.scss';
 import Resumo from './pages/Resumo';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import SideNav from './components/Header/SideNav';
+import { DataContextProvider } from './context/DataContext';
 
 function App() {
   return (
     <>
-      <Resumo />
+      <DataContextProvider>
+        <div>
+          <SideNav />
+          <main>
+            <Header />
+            <Resumo />
+          </main>
+        </div>
+      </DataContextProvider>
     </>
   );
 }
