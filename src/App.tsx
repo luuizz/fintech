@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import SideNav from './components/Header/SideNav';
 import { DataContextProvider } from './context/DataContext';
+import Vendas from './pages/Vendas';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <main>
             <Header />
             <Resumo />
+            <Vendas />
           </main>
         </div>
       </DataContextProvider>
