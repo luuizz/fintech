@@ -15,7 +15,7 @@ export type IVenda = {
   id: string;
   nome: string;
   preco: number;
-  status: 'pago' | 'pendente' | 'falha' | 'processando';
+  status: 'pago' | 'falha' | 'processando';
   pagamento: 'boleto' | 'cartao' | 'pix';
   data: string;
   parcelas: number | null;
